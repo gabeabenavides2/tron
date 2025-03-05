@@ -9,10 +9,17 @@ This project is a Tron game developed as a guided project through the **MSU AI C
 - **Training Mode**: Train the AI using reinforcement learning.  
 - **Player vs AI Mode**: Play against the AI to test its strategies.  
 
-## How It Works  
-- The AI is trained using reinforcement learning principles.  
-- The game loop runs in **pygame**, rendering the grid and handling player/AI inputs.  
-- The AI uses past training data to improve its movement decisions.  
+## Challenges and Custom AI Development  
+During **Week 6**, I encountered challenges when attempting to train an AI using reinforcement learning beyond the provided script. My computer hardware had limitations that prevented effective RL training, making it difficult to achieve a competitive AI opponent.  
+
+To overcome this, I decided to create my own AI bot that does not rely on RL but instead follows a **rule-based approach** with smarter decision-making. The AI considers the player's position and avoids dead ends while attempting to cut off the player strategically.  
+
+Here’s a simplified version of the AI’s logic:  
+- It evaluates possible moves and avoids its own trail.  
+- It prioritizes paths that keep it from crashing.  
+- If multiple safe moves exist, it moves towards the player to force them into a disadvantageous position.  
+
+This approach allowed me to create a functional AI opponent that could compete effectively without requiring extensive training resources.  
 
 ## Project Timeline  
 This project followed a structured development process over six weeks with resources from the **MSU AI Club**:  
